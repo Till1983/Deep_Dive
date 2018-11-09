@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+
+}
+
+header {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("/Users/thomasfrey/Documents/Team1-Deploy/Assests/171563592279475e9e637693d7461a4937d87b8a.jpg");
+}
+
+p {
+  font-family:'Roboto' serif;
+  color: white;
+  font-size: 15px;
+  border: 1px solid white;
+  width: 200px;
+  height: auto;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-family:'Roboto' serif;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 80px;
+}
+
+h2 {
+  border: 1px solid white;
+  font-size: 40;
+  color: #66A5AD;
+  text-align: center;
+  height: auto;
+  width: 200px;
+  padding: 5px;
+}
+
+h3 {
+  width:  365px;
+  height: 50px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
+  font-family: Roboto
+  font-family: Roboto Condensed Italic;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  left: 985px;
+}
+
+/* Parent */
+.container {
+  width: 1804px;
+  height: 914,96px;
+  padding: 5px;
+  margin-top: 10px;
+  background-color: rgba(255,255,255, 0.30);
+  position: static;
+}
+
+/*Child */
+.images {
+  display: flex;
+}
+
+.topBar {
+  height: 115px;
+  width: 1804px;
+  padding: 5px;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  /* background-color: #c6c6c6; */
+}
+
+#personalInfo {
+  padding: 20px 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+  height: 556;
+  width: 415;
+}
+
+#historyPic {
+  padding: 20px 30px;
+  margin: 5px;
+  overflow: scroll;
+  display: inline-block;
+}
+
+#menu {
+  height: 45,7;
+  width: 49,28;
+  position: relative;
+  padding: 5px;
+  margin: 5px;
+  left: 58,5px;
+  top: 26,19px;
+}
+
+#search {
+  height:  41,57;
+  width: 41,16;
+  position: static;
+  padding: 5px;
+  margin: 5px;
+  left: 140,13px;
+  top: 28,61px;
+}
+
+#funnel {
+  height: 47,8;
+  width: 48;
+  position: static;
+  padding: 5px;
+  margin: 5px;
+  left: auto ;
+  top: auto;
+}
+
+#profilePic {
+  height: 98px;
+  width: 98px;
+  position: relative;
+  left: 1200px;
+}
+#History {
+  position:flex;
+}
+
+#Heading {
+  border: 1px solid white;
+  position: relative;
+}
+
+#logo {
+  height: 77px;
+  width: 260px;
+  text-align: center;
+  position: relative;
+  left: 600px;
+}
+
+#HistoryTag {
+  float: left;
+}
+
+#SubscriptionTag {
+  float: left;
+}
