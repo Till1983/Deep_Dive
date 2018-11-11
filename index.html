@@ -19,18 +19,44 @@
     <img class="topbar-icons" src="assets/nav-button.png" width="22" height="20">
     <img class="topbar-icons" src="assets/search.png" width="24" height="24">
     <img class="topbar-icons" src="assets/filter.png" width="24" height="24">
-    <img class="topbar-icons" src="assets/add-post.png" width="24" height="24">
+    <img class="topbar-icons" src="assets/add-post.png" width="24" height="24" onclick="addPost()">
 
     <a class="active" href="">
       <img src="assets/main-logo.png" height="100%">
     </a>
 
-    <a href="#">
-    <img class="profile-icon" href="#" src="assets/profile-pic.png" width="36" height="36">
+    <a href="profilePage_History.html">
+      <img class="profile-icon" href="#" src="assets/profile-pic.png" width="32" height="32">
     </a>
   </div>
 
   <div id="blocks-system">
+
+    <div id="add-post" class="add-post" style="display:none;">
+
+      <div class="new-post-block">
+
+        <div class="post-text">
+
+          <input id="new-title" class="new-title" type="text" name="firstname" placeholder="Title">
+          <input id="new-content" class="new-content" type="text" name="firstname" placeholder="Content">
+
+        </div>
+
+        <div class="link-preview">
+
+          <img id="link-pic" class="link-pic" src="assets/code-sample.jpg" height="100%" width="100%">
+          <input class="link" type="text" name="firstname" placeholder="Link" onkeypress="loadPreview()">
+
+        </div>
+
+      </div>
+
+      <button class="post" onclick="submitPost()">
+        POST
+      </button>
+
+    </div>
 
     <div class="block">
 
@@ -134,13 +160,13 @@
 
           <div class="voting">
 
-            <button id="button-upvote2" class="upvote" width="30px" onclick="changeUpvoteImage1()">
+            <button id="button-upvote2" class="upvote" width="30px" onclick="changeUpvoteImage2()">
               <img id="upvote2" src="assets/upvote1.png" width="30px">
             </button>
 
             <div id="votes2" class="votes" style="">420</div>
 
-            <button id="button-downvote2" class="downvote" width="30px" onclick="changeDownvoteImage1()">
+            <button id="button-downvote2" class="downvote" width="30px" onclick="changeDownvoteImage2()">
               <img id="downvote2" src="assets/downvote1.png" width="30px">
             </button>
 
@@ -153,7 +179,7 @@
               <button class="share-it" onclick="">
                 <img src="assets/share.png" width="30px">
               </button>
-              <button class="comment-it" onclick="displayPostComments1()">
+              <button class="comment-it" onclick="displayPostComments2()">
                 <img src="assets/comment.png" width="30px">
               </button>
 
@@ -216,13 +242,13 @@
 
           <div class="voting">
 
-            <button id="button-upvote3" class="upvote" width="30px" onclick="changeUpvoteImage1()">
+            <button id="button-upvote3" class="upvote" width="30px" onclick="changeUpvoteImage3()">
               <img id="upvote3" src="assets/upvote1.png" width="30px">
             </button>
 
             <div id="votes3" class="votes" style="">300</div>
 
-            <button id="button-downvote3" class="downvote" width="30px" onclick="changeDownvoteImage1()">
+            <button id="button-downvote3" class="downvote" width="30px" onclick="changeDownvoteImage3()">
               <img id="downvote3" src="assets/downvote1.png" width="30px">
             </button>
 
@@ -235,7 +261,7 @@
               <button class="share-it" onclick="">
                 <img src="assets/share.png" width="30px">
               </button>
-              <button class="comment-it" onclick="displayPostComments1()">
+              <button class="comment-it" onclick="displayPostComments3()">
                 <img src="assets/comment.png" width="30px">
               </button>
 
@@ -249,7 +275,7 @@
 
         <div class="thumbnail">
 
-          <img src="assets/mark-manson-sample.png" width="100%" height="100%">
+          <img src="assets/aoi-sample.jpg" width="100%" height="100%">
 
         </div>
 
