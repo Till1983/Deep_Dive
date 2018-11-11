@@ -1,0 +1,283 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <title>
+    Deep Dive
+  </title>
+</head>
+
+<body style="margin:0px; background-image:url(assets/bg-img.jpg); background-size:cover;  background-repeat:no-repeat; background-position: center center;">
+
+  <div class="topnav">
+
+    <img class="topbar-icons" src="assets/nav-button.png" width="22" height="20">
+    <img class="topbar-icons" src="assets/search.png" width="24" height="24">
+    <img class="topbar-icons" src="assets/filter.png" width="24" height="24">
+    <img class="topbar-icons" src="assets/add-post.png" width="24" height="24">
+
+    <a class="active" href="">
+      <img src="assets/main-logo.png" height="100%">
+    </a>
+
+    <a href="#">
+    <img class="profile-icon" href="#" src="assets/profile-pic.png" width="36" height="36">
+    </a>
+  </div>
+
+  <div id="blocks-system">
+
+    <div class="block">
+
+      <div class="active-content">
+
+        <div class="content">
+
+          <p class="post-title">
+            Mark Manson Blog
+          </p>
+
+          <p class="post-content">
+            "My favorite blog for personal growth."
+          </p>
+
+        </div>
+
+        <div class="options">
+
+          <div class="voting">
+
+            <button id="button-upvote1" class="upvote" width="30px" onclick="changeUpvoteImage1()">
+              <img id="upvote1" src="assets/upvote1.png" width="30px">
+            </button>
+
+            <div id="votes1" class="votes" style="">300</div>
+
+            <button id="button-downvote1" class="downvote" width="30px" onclick="changeDownvoteImage1()">
+              <img id="downvote1" src="assets/downvote1.png" width="30px">
+            </button>
+
+          </div>
+
+          <div class="social">
+
+            <div class="social-buttons">
+
+              <button class="share-it" onclick="">
+                <img src="assets/share.png" width="30px">
+              </button>
+              <button class="comment-it" onclick="displayPostComments1()">
+                <img src="assets/comment.png" width="30px">
+              </button>
+
+            </div>
+
+            <p class="comments-count" style="float:left">30</p>
+
+          </div>
+
+        </div>
+
+        <div class="thumbnail">
+
+          <img src="assets/mark-manson-sample.png" width="100%" height="100%">
+
+        </div>
+
+      </div>
+
+      <div id="comments1" class="comments" style="display:none;">
+
+        <div class="comment">
+          <span class="comment-user"><strong>Alex</strong></span>
+          <span class="comment-content">It's amazing!</span>
+        </div>
+
+        <div class="comment">
+          <span class="comment-user"><strong>Emily</strong></span>
+          <span class="comment-content">+1 to that!</span>
+        </div>
+
+        <div class="comment">
+          <span class="comment-user"><strong>John</strong></span>
+          <span class="comment-content">Wow, finally found what I was looking for.</span>
+        </div>
+
+        <input id="new-comment1" class="new-comment" type="text" name="firstname" placeholder="Make a new comment..." onkeypress="newComment1(this)">
+
+      </div>
+
+    </div>
+
+    <div class="block">
+
+      <div class="active-content">
+
+        <div class="content">
+
+          <p class="post-title">
+            Zec Plus
+          </p>
+
+          <p class="post-content">
+            "Yow its discount on protein powder!!! Do some curls for the girls!!"
+          </p>
+
+        </div>
+
+        <div class="options">
+
+          <div class="voting">
+
+            <button id="button-upvote2" class="upvote" width="30px" onclick="changeUpvoteImage1()">
+              <img id="upvote2" src="assets/upvote1.png" width="30px">
+            </button>
+
+            <div id="votes2" class="votes" style="">420</div>
+
+            <button id="button-downvote2" class="downvote" width="30px" onclick="changeDownvoteImage1()">
+              <img id="downvote2" src="assets/downvote1.png" width="30px">
+            </button>
+
+          </div>
+
+          <div class="social">
+
+            <div class="social-buttons">
+
+              <button class="share-it" onclick="">
+                <img src="assets/share.png" width="30px">
+              </button>
+              <button class="comment-it" onclick="displayPostComments1()">
+                <img src="assets/comment.png" width="30px">
+              </button>
+
+            </div>
+
+            <p class="comments-count" style="float:left">17</p>
+
+          </div>
+
+        </div>
+
+        <div class="thumbnail">
+
+          <img src="assets/amazon-sample.png" width="100%" height="100%">
+
+        </div>
+
+      </div>
+
+      <div id="comments2" class="comments" style="display:none;">
+
+        <div class="comment">
+          <span class="comment-user"><strong>Alex</strong></span>
+          <span class="comment-content">It's amazing!</span>
+        </div>
+
+        <div class="comment">
+          <span class="comment-user"><strong>Emily</strong></span>
+          <span class="comment-content">+1 to that!</span>
+        </div>
+
+        <div class="comment">
+          <span class="comment-user"><strong>John</strong></span>
+          <span class="comment-content">Wow, finally found what I was looking for.</span>
+        </div>
+
+        <input id="new-comment2" class="new-comment" type="text" name="firstname" placeholder="Make a new comment..." onkeypress="newComment1(this)">
+
+      </div>
+
+    </div>
+
+    <div class="block">
+
+      <div class="active-content">
+
+        <div class="content">
+
+          <p class="post-title">
+            Academy of Ideas
+          </p>
+
+          <p class="post-content">
+            "Check out the Video from this channel."
+          </p>
+
+        </div>
+
+        <div class="options">
+
+          <div class="voting">
+
+            <button id="button-upvote3" class="upvote" width="30px" onclick="changeUpvoteImage1()">
+              <img id="upvote3" src="assets/upvote1.png" width="30px">
+            </button>
+
+            <div id="votes3" class="votes" style="">300</div>
+
+            <button id="button-downvote3" class="downvote" width="30px" onclick="changeDownvoteImage1()">
+              <img id="downvote3" src="assets/downvote1.png" width="30px">
+            </button>
+
+          </div>
+
+          <div class="social">
+
+            <div class="social-buttons">
+
+              <button class="share-it" onclick="">
+                <img src="assets/share.png" width="30px">
+              </button>
+              <button class="comment-it" onclick="displayPostComments1()">
+                <img src="assets/comment.png" width="30px">
+              </button>
+
+            </div>
+
+            <p class="comments-count" style="float:left">30</p>
+
+          </div>
+
+        </div>
+
+        <div class="thumbnail">
+
+          <img src="assets/mark-manson-sample.png" width="100%" height="100%">
+
+        </div>
+
+      </div>
+
+      <div id="comments3" class="comments" style="display:none;">
+
+        <div class="comment">
+          <span class="comment-user"><strong>Alex</strong></span>
+          <span class="comment-content">It's amazing!</span>
+        </div>
+
+        <div class="comment">
+          <span class="comment-user"><strong>Emily</strong></span>
+          <span class="comment-content">+1 to that!</span>
+        </div>
+
+        <div class="comment">
+          <span class="comment-user"><strong>John</strong></span>
+          <span class="comment-content">Wow, finally found what I was looking for.</span>
+        </div>
+
+        <input id="new-comment3" class="new-comment" type="text" name="firstname" placeholder="Make a new comment..." onkeypress="newComment1(this)">
+
+      </div>
+
+    </div>
+
+</body>
+
+</html>
